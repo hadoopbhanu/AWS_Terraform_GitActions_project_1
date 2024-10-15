@@ -30,7 +30,7 @@ In this project, we:
 ---
 
 ## **Project Structure**
-
+```
 AWS_Terraform_GitActions_project_1/
 │
 ├── .github/
@@ -49,6 +49,7 @@ AWS_Terraform_GitActions_project_1/
 ├── .gitignore                 # Files and folders to ignore
 ├── README.md                  # Project documentation (this file)
 └── terraform.tfstate          # Local Terraform state file
+```
 
 ---
 
