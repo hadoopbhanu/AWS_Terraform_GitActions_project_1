@@ -1,5 +1,5 @@
 
-# **Infrastructure Provisioning CI CD with Terraform & GitHub Actions 🚀**
+# ** Infrastructure Provisioning CI CD with Terraform & GitHub Actions 🚀 **
 
 This project demonstrates how to **provision cloud infrastructure** using **Terraform** and automate the deployment pipeline with **GitHub Actions**. It highlights modern **Infrastructure as Code (IaC)** practices, showcasing automated deployment workflows, ideal for **Cloud, DevOps, or Infrastructure Engineering** roles.
 
