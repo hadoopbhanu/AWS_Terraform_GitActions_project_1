@@ -122,11 +122,5 @@ jobs:
 
 ---
 
-## **Conclusion**
-
-This project demonstrates a complete **infrastructure automation workflow**, from writing Terraform code to deploying and verifying resources with **CI/CD pipelines** using GitHub Actions. It reflects practical knowledge in managing **IaC** and automating deployments, making it an excellent addition to your **DevOps portfolio**.
-
----
-
-Author
-Bhanu Koduri
+                                                                                                                                                                                                                                          Author
+                                                                                                                                                                                                                                       -- Bhanu Koduri
