@@ -1,40 +1,43 @@
 name: Terraform CICD pipeline for infra provisioning
-run-name : ${{ github.actor }} has trigerred the pipleline
+run-name: ${{ github.actor }} has triggered the pipeline
 
 on:
   push:
     branches:
       - 'main'
-# test
+
 env:
   AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
-  AWS_SECRET_ACCESS_KEY:  ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
 jobs:
   build-infra:
-    name: terraform-ci-cd  
+    name: terraform-ci-cd
     runs-on: ubuntu-latest
+
     steps:
-      -name: Checkout
-      uses: actions/checkout@v2
-      -name: Set up Terraform
-      uses: hashicorp/setup-terraform@v2
-      -name: Terraform init
-      id: init
-      run: terraform init
-      working-directory: ./terraform-webapp
-      -name: Terraform Validate
-      id: validate
-      run: terraform validate
-      working-directory: ./terraform-webapp
-      -name: Terraform plan
-      id: plan
-      run: terraform plan
-      working-directory: ./terraform-webapp
-      -name: Terraform Apply
-      id: apply
-      run: terraform apply --auto-approve
-      working-directory: ./terraform-webapp
+      - name: Checkout
+        uses: actions/checkout@v2
 
+      - name: Set up Terraform
+        uses: hashicorp/setup-terraform@v2
 
+      - name: Terraform Init
+        id: init
+        run: terraform init
+        working-directory: ./terraform-webapp
 
+      - name: Terraform Validate
+        id: validate
+        run: terraform validate
+        working-directory: ./terraform-webapp
+
+      - name: Terraform Plan
+        id: plan
+        run: terraform plan
+        working-directory: ./terraform-webapp
+
+      - name: Terraform Apply
+        id: apply
+        run: terraform apply --auto-approve
+        working-directory: ./terraform-webapp
