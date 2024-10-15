@@ -46,7 +46,7 @@ AWS_Terraform_GitActions_project_1/
 │       ├── EC2/               # Module for EC2 instance management
 │       ├── SG/                # Module for Security Groups
 │       └── VPC/               # Module for VPC resources
-├── .gitignore                 # Files and folders to ignore
+├── .gitignore                 # Files and folders to ignore (tf providers, lock files etc.)
 ├── README.md                  # Project documentation (this file)
 └── terraform.tfstate          # Local Terraform state file
 ```
